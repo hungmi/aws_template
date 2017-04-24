@@ -2,7 +2,7 @@ default: &default
   timeout: 5000
   adapter: postgresql
   encoding: utf8
-  database: longyun_dev
+  database: railsapp_dev
   pool: 5
 
 development:
@@ -14,3 +14,4 @@ test:
 
 production:
   <<: *default
+  database: railsapp_production
