@@ -36,3 +36,14 @@ set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 # after 'deploy:published', 'delayed_job:restart' do
 #   invoke 'delayed_job:restart'
 # end
+namespace :deploy do
+  # cap production:upload_yml
+  desc 'Upload YAML files.'
+  task :upload_yml do
+    on roles(:app) do
+      execute "mkdir #{shared_path}/config -p"
+      upload! StringIO.new(File.read("config/database.yml")), "#{shared_path}/config/database.yml"
+      upload! StringIO.new(File.read("config/application.yml")), "#{shared_path}/config/application.yml"
+    end
+  end
+end
