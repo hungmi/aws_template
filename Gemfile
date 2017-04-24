@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.4'
@@ -35,23 +35,23 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'awesome_rails_console'
 # gem 'omniauth', '1.2.2'
 # gem 'omniauth-facebook', '3.0.0'
-gem 'mini_magick'
-gem 'fog-aws', '0.9.4'
-gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+# gem 'mini_magick'
+# gem 'fog-aws', '0.9.4'
+# gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'figaro'
 gem 'pg'
-gem "lazyload-rails"
-gem 'fastclick-rails'
-gem 'ransack'
-gem 'delayed_job_active_record'
-gem 'capybara'
-gem 'poltergeist'
-gem "daemons"
-gem 'whenever', :require => false
-gem 'spreadsheet'
-gem 'kaminari'
-gem "select2-rails"
-gem 'bootstrap-datepicker-rails'
+# gem "lazyload-rails"
+# gem 'fastclick-rails'
+# gem 'ransack'
+# gem 'delayed_job_active_record'
+# gem 'capybara'
+# gem 'poltergeist'
+# gem "daemons"
+# gem 'whenever', :require => false
+# gem 'spreadsheet'
+# gem 'kaminari'
+# gem "select2-rails"
+# gem 'bootstrap-datepicker-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -71,8 +71,8 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano-rvm'
-  gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'capistrano-rbenv'
+  # gem 'capistrano3-delayed-job', '~> 1.0'
 end
 
 group :production do
