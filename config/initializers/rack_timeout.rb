@@ -1,0 +1,1 @@
+# Rack::Timeout.timeout = 990 if Rails.env.production?

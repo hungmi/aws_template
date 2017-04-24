@@ -1,0 +1,72 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-TW:
+  product:
+    states:
+      all: "全部"
+      scanned: "<span class='visible-lg-inline'>[F2] </span>秤重" 
+      weighted: "<span class='visible-lg-inline'>[F3] </span>填資料"
+      detailed: "已填資料"
+    revise_states_actions:
+      unrevised: 標為審核
+      revised: 重新審核
+    scrape_states:
+      unscraped: 未
+      scraped: 已
+    quick_names:
+      JA: JAPAN
+      CN: CHINA
+      TH: THAILAND
+      MY: MALAYSIA
+      KR: KOREA
+      DE: GERMANY
+      VN: VIETNAM
+      CT: COTTON
+      ABS: ABS
+      PU: POLYURETHANE
+      PET: POLYESTER
+      STL: STANLESS
+      COIL: CITRONELLA OIL
+    origins:
+      JAPAN: 日本
+      CHINA: 中國
+      THAILAND: 泰國
+      MALAYSIA: 馬來西亞
+      KOREA: 韓國
+      GERMANY: 德國
+      VIETNAM: 越南
+
+  paper:
+    usages:
+      delivery: 出貨單
+      invoice: Invoice
+      packing_list: Packing List
+      tw_invoice: 台灣端海關 invoice & PL
+      blackcat_list: 黑貓配達單
+      li_invoice: 台灣利報機明細
+      international_exp: INTERNATIONAL EXP
+      # customer_invoice: 顧客 invoice
+  helpers:
+    submit:
+      product:
+        create: 加入列表
+        update: 更新資料

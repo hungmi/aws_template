@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= meta_title %></title>
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag 'application' %>
+  <%#= favicon_link_tag "favicon.ico" %>
+</head>
+<body class="<%= controller_name %> <%= action_name %>">
+  <h1>It works like a charm!</h1>
+</body>
+</html>
