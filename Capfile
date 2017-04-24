@@ -33,5 +33,5 @@ require 'capistrano/rails/assets' # for asset handling add
 require 'capistrano/rails/migrations' # for running migrations
 require 'capistrano/puma'
 
-require "whenever/capistrano"
-require 'capistrano/delayed_job'
+# require "whenever/capistrano"
+# require 'capistrano/delayed_job'

@@ -42,7 +42,7 @@ server '52.200.35.176', user: 'ubuntu', roles: %w{web app db}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/Users/hungmi/.ssh/rukei8899.pem),
+   keys: %w(/Users/hungmi/.ssh/hungmingtsaiqq.pem),
    forward_agent: false,
    auth_methods: %w(publickey)
  }

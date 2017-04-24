@@ -12,30 +12,3 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require fastclick.min
-//= require jquery.lazyload
-//= require select2
-//= require bootstrap-datepicker/core
-//= require bootstrap-datepicker/locales/bootstrap-datepicker.ja.js
-//= require auto_textarea
-//= require ajax_product
-//= require products
-//= require products_index
-//= require products_gallery
-//= require paper_edit_add_new_orders
-//= require paper_edit_ajax_actions
-//= require paper_edit_box
-//= require companies
-//= require filter
-
-$(document).on("ready", function(){
-  $("img").lazyload();
-  $('textarea').on("keydown", function () { 
-    h(this);
-  });
-  $(".select2").select2();
-  $('.datepicker').datepicker({
-    language: 'ja',
-    format: "yyyy-mm-dd",
-  });
-});
