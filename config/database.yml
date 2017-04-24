@@ -10,7 +10,7 @@ development:
 
 test:
   <<: *default
-  database: longyun_test
+  database: railsapp_test
 
 production:
   <<: *default
